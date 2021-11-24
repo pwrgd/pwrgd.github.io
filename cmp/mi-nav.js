@@ -12,8 +12,8 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<ul>
-        <li>
+      `<ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
           <a class="btn btn-warning btn-sm" href="index.html">
             Sesión</a>
         </li>
@@ -40,7 +40,7 @@ class MiNav extends HTMLElement {
            * para clientes. */
           if (roles.has("Cliente")) {
             html += /* html */
-              `<li>
+              `<li class="nav-item" role="presentation" >
                 <a class="btn btn-warning btn-sm" href=
                   "chat.html">Chat's</a>
               </li>`;
