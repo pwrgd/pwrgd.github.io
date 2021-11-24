@@ -41,8 +41,8 @@ class MiNav extends HTMLElement {
           if (roles.has("Cliente")) {
             html += /* html */
               `<li>
-                <a href=
-                  "chat.html">Chat</a>
+                <a class="btn btn-warning btn-sm" href=
+                  "chat.html">Chat's</a>
               </li>`;
           }
           /* Enlaces para solo
