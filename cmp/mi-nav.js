@@ -14,7 +14,7 @@ class MiNav extends HTMLElement {
     this.innerHTML = /* html */
       `<ul>
         <li>
-          <a href="index.html">
+          <a class="btn btn-warning btn-sm" href="index.html">
             Sesión</a>
         </li>
       </ul>`;
