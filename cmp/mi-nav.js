@@ -12,9 +12,9 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="btn btn-warning btn-sm" href="index.html">
+      `<ul>
+        <li>
+          <a  href="index.html">
             Sesión</a>
         </li>
       </ul>`;
