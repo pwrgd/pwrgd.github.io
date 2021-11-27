@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sesion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <!--
+    Carga el núcleo de Firebase
+    JS SDK
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+  <!--
+    Agrega el manejo de
+    autenticación.
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+  <!--
+    Agrega el manejo de bases de
+    datos.
+  -->
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+  <!--
+    Configura la app usando la
+    información del sitio de
+    Firebase.
+  -->
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-progreso.js">
+    </script>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo">SESIÓN</h1>
+					<mi-nav id="nav"></mi-nav>
+					<!--
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Sesion</a></li>
+							<li><a href="chat.html">Chats</a></li>
+							<li><a href="alumnos.html">Alumnos</a></li>
+							<li><a href="usuarios.html">Usuarios</a></li>
+						</ul>
+					</nav>-->
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+				<form name="forma">
+					<div class="content">
+						<header>
+							<h2>BIENVENIDO <output name="nombre">
+          						<mi-progreso>
+          						</mi-progreso>
+        						</output></h2>
+							<p><strong>Tu correo es:</strong><br />
+							<output name="email"><mi-progreso></mi-progreso></output></p>
+							<button
+	          				type="button"
+	          				name="terminarSesión">
+	         				Terminar Sesión
+	        				</button>
+						</header>
+						<span class="image"><img id="avatar" src="" alt="Avatar"></span>
+					</div>
+				</form>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<mi-footer></mi-footer>
+						<!--<li>&copy; Untitled. All rights reserved.</li><li>Design:DIEGO RIVERA</li>-->
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script type="module" src="js/CtrlSesion.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
