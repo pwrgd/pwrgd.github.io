@@ -40,8 +40,8 @@ class MiNav extends HTMLElement {
            * para clientes. */
           if (roles.has("Cliente")) {
             html += /* html */
-              `<li class="nav-item" role="presentation" >
-                <a class="btn btn-warning btn-sm" href=
+              `<li >
+                <a  href=
                   "chat.html">Chat's</a>
               </li>`;
           }
