@@ -7,12 +7,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+  <script src="js/init.js"></script>
+  <script type="module" src="cmp/mi-nav.js"></script>
+  <script type="module" src="cmp/mi-footer.js"> </script>
+  <script type="module"src="cmp/mi-progreso.js"></script>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html">Usuarios</a></h1>
 					<mi-nav id="nav"></mi-nav>
 				</header>
 
@@ -21,15 +34,18 @@
 					<div class="container">
 						<header class="major">
 							<h2>Usuarios</h2>
-							<a href="">Agregar</a><br>
+							<input type="submit" name="Agregar" href="usuarioNuevo.html" class="primary"></a><br>
+						
 						</header>
 						<!-- Table -->
 							<section>
-								<h4>Left &amp; Right</h4>
-								<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>
-								<br>	
-								<br><br>
-								</p>
+								<h4>Lista de usuarios registrados</h4>
+									<ul id="lista" class="lista">
+									    <li>
+									      <mi-progreso>
+									      </mi-progreso>
+									    </li>
+								  </ul>
 							</section>						
 					</div>
 				</div>
@@ -51,6 +67,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="module"src="js/CtrlAlumnos.js"></script>
 
 	</body>
 </html>
