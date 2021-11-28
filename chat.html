@@ -7,12 +7,26 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+  <script src="js/init.js"></script>
+  <script type="module" src="cmp/mi-nav.js"></script>
+  <script type="module" src="cmp/mi-footer.js"> </script>
+  <script type="module"src="cmp/mi-progreso.js"></script>
+  
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html">CHAT</a></h1>
 					<mi-nav id="nav"></mi-nav>
 				</header>
 
@@ -22,14 +36,14 @@
 						<!-- Form -->
 							<section>
 								<h3>CHATS</h3>
-								<form method="post" action="#">
+								<form name="forma">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
+											<input type="text" name="texto" placeholder="Mensaje"  />
 										</div>
 										<div class="col-6 col-12-xsmall">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
+												<li><input type="submit" value="Enviar" class="primary" /></li>
 												<li><input type="reset" value="Reset" /></li>
 											</ul>
 										</div>
@@ -37,9 +51,16 @@
 								</form>
 							<!-- Text -->
 							<section>
-								<h4>(correo)</h4>
-								<blockquote>(Mensajes)</blockquote>
-							</section>
+								<h4><output name="email"><mi-progreso></mi-progreso></output></h4>
+								<blockquote>
+									<ul id="lista" class="lista">
+									      <li>
+									        <mi-progreso>
+									        </mi-progreso>
+									      </li>
+									</ul>
+								</blockquote>
+									
 							</section>							
 					</div>
 				</div>
@@ -62,6 +83,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			 <script type="module" src="js/CtrlChat.js"></script>
 
 	</body>
 </html>
