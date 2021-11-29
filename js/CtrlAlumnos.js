@@ -77,7 +77,16 @@ function htmlFila(doc) {
     new URLSearchParams();
   parámetros.append("id", doc.id);
   return ( /* html */
-    `<li>
+    `<tr>
+    <td><a class="fila" href="alumno.html?${parámetros}">${matricula}</a></td>
+    <td><a class="fila" href="alumno.html?${parámetros}">${nombre}</a></td>
+    <td><a class="fila" href="alumno.html?${parámetros}">${dformat}</a></td>
+    </tr>`);
+  }
+
+
+
+  /*  `<li>
       <a class="fila" href=
   "alumno.html?${parámetros}">
         <strong class="primario">
@@ -85,8 +94,8 @@ function htmlFila(doc) {
         </strong>
       </a>
      
-    </li>`);
-}
+    </li>`);*/
+
 
 /** @param {Error} e */
 function errConsulta(e) {
