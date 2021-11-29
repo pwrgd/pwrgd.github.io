@@ -1,84 +1,88 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,
-       initial-scale=1.0">
-  <title>
-    Alumno Nuevo
-  </title>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script src="js/init.js">
-  </script>
-  <script type="module"
-    src="cmp/mi-nav.js">
-    </script>
-  <script type="module"
-    src="cmp/mi-footer.js">
-    </script>
-  <link rel="stylesheet"
-  href="css/styles.css">
-</head>
-<body>
-  <form name="forma">
-    <mi-nav></mi-nav>
-    <header>
-      <h1>Alumno Nuevo</h1>
-      <div class="herramientas">
-        <a
-          href="alumnos.html">
-          Cancelar</a>
-        <button type="submit">
-          Guardar
-        </button>
-      </div>
-    </header>
-    <p>
-      <label>
-        Matricula
-        <input name="matricula"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Nombre
-        <input name="nombre"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Teléfono
-        <input name="telefono"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Grupo
-        <input name="grupo"
-          type="text" required>
-      </label>
-    </p>
-    <p>
-      <label>
-        Fecha
-        <input name="fecha"
-          type="date" required>
-      </label>
-    </p>
-    <mi-footer></mi-footer>
-  </form>
-  <script type="module"
-    src="js/CtrlAlumnoNuevo.js">
-    </script>
-</body>
-</html>
+<!DOCTYPE HTML>
 
+<html>
+	<head>
+		<title>Alumno Nuevo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Agrega a un nuevo alumno</a></h1>
+					<nav id="nav">
+						
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Alumno Nuevo</h2>
+							
+						</header>
+
+						
+						<!-- Form -->
+							<section>
+								<h3>Form</h3>
+								<form name="forma">
+									<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Enviar" class="primary" /></li>
+												<li><a href="alumnos.html"> Cancelar </a></li>
+												 <div class="primary" class="herramientas">
+									       
+									      </div>
+																				</ul>
+										</div>
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" required name="matricula" placeholder="Matricula" />
+										</div>
+
+										<div class="col-6 col-12-xsmall">
+											<input type="text" required name="nombre"  placeholder="Nombre" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="text" required name="telefono"  placeholder="telefono" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="text"required name="grupo"  placeholder="Grupo" />
+										</div>
+										<div >
+											<input type="date" required name="fecha"  placeholder="Fecha" />
+										</div>
+										
+										
+										
+									</div>
+								</form>
+							</section>
+
+					
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<mi-footer></mi-footer>
+					</ul>
+				</footer>
+		</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="module" src="js/CtrlAlumnoNuevo.js"></script>
+
+	</body>
+</html>
